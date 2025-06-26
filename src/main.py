@@ -9,8 +9,16 @@ robot = Robot(pos_x=300, pos_y=300, angle_orientation=0, vitesse_g=0, vitesse_d=
 arene = Arene(largeur=600, hauteur=600)
 obstacle1=Obstacle(x=380,y=200,larg=50,longueur=50)
 obstacle2=Obstacle(x=100,y=40,larg=50,longueur=50)
+obstacle3=Obstacle(x=0,y=0,larg=600,longueur=50)
+obstacle4=Obstacle(x=0,y=0,larg=50,longueur=600)
+obstacle5=Obstacle(x=600,y=600,larg=200,longueur=200)
+obstacle6=Obstacle(x=600,y=600,larg=200,longueur=200)
 arene.ajout_obstacles(obstacle1)
 arene.ajout_obstacles(obstacle2)
+arene.ajout_obstacles(obstacle3)
+arene.ajout_obstacles(obstacle4)
+arene.ajout_obstacles(obstacle5)
+arene.ajout_obstacles(obstacle6)
 adapter = AdapterVirtuel(robot, arene.liste_obstacles)
 
 #si le robot a parcouru moins de 1m, on avance 50 ; sinon on tourne 90°
